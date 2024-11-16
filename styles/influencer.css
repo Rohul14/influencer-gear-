@@ -1,0 +1,91 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    padding: 90px 120px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav li{
+    list-style: none;
+    align-items: center;
+}
+/* influencer-container */
+.influencer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.influencer{
+}
+.influ-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin: 10px 0px;
+}
+.influ-pera{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.prebook{ 
+    color: #FFFFFF;
+    padding: 10px 24px;
+    gap: 8px;
+    border: 0px solid;
+    border-radius: 41px;
+    background: #E02C6D;
+}
+.arrow{
+    margin-left: 10px;
+}
+.camera{
+    position: absolute;
+    z-index: 10;
+    padding: 34px 0px 0px 12px;
+}
+.back-img{
+    position: relative;
+}   
+
+
+
+/* responsive devise styles  */
+@media screen and (max-width:576px) {
+    /* header */
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        padding: 0px;
+        gap: 10px;
+    }
+    /* .influencer-container */
+    .influencer-container{
+        flex-direction: column-reverse;
+    }
+    .influencer{
+    text-align: center; 
+    }
+    .camera{
+        width: 80%;
+        padding: 10px 0px 0px 0px;
+    }
+    .back-img{
+        width: 100%;
+    }
+    
+}
